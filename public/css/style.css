@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #ebebeb;
+}
+/*HEADER*/
+header{
+    background-color: #EAC926;
+    font-size: 12px;
+}
+.pagos{
+    margin-left: 23%;
+}
+ul{
+    list-style: none;
+}
+
+.burger-menu{
+    background-color: #1259c3;
+    margin-left: 45%;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+/*FOOTER*/
+
+footer{
+    background-color: white;
+}
