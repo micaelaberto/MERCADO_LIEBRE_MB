@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/loginStyle.css">
     <title>Mercado Liebre</title>
 </head>
 <body>
@@ -50,7 +51,35 @@
         <img src="images/img-home-banner.jpg" alt="ofertas">
     </section>
     <main>
-        
+        <div class="cardRegistro">
+            <p class="register-box-msg">Loguearse</p>
+
+            <form action="/login" method="POST">
+    
+                <div class="row">
+                    <div class="row-user">
+                        <div class="formGroup">
+                            <label for="username">Usuario</label>
+                            <input style="font-family: 'Font Awesome 5 Free'; font-weight: 600;" type="text" name="username" class="form-control users" id="username" placeholder=" &#xf007;  Ingrese usuario" required>
+                        </div>
+                        <div class="formGroup">
+                            <label for="pass">Contraseña</label>
+                            <input style="font-family: 'Font Awesome 5 Free'; font-weight: 600;" type="password" name="pass" class="form-control" id="pass" placeholder=" &#xf084;  Ingrese contraseña" required>
+                        </div>
+                    </div>
+                    <div class="rowButton">
+                        <div class="rowButtonBox">
+                            <button type="submit" class="ov-btn-grow-spin">
+                                <i class="fas fa-share-square"></i> Enviar
+                            </button>
+                            <button type="reset" class="ov-btn-grow-box">
+                                <i class="fas fa-broom"></i> Limpiar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div> 
     </main>
     <footer>
         <div>
