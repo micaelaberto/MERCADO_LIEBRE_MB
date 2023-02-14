@@ -1,38 +1,380 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
-body{
-    font-family: 'Roboto', sans-serif;
+* {
     margin: 0;
-    background-color: #ebebeb;
-}
-/*HEADER*/
-header{
-    background-color: #EAC926;
-    font-size: 12px;
-}
-.pagos{
-    margin-left: 23%;
-}
-ul{
-    list-style: none;
+    box-sizing: border-box;
 }
 
-.burger-menu{
-    background-color: #1259c3;
-    margin-left: 45%;
-    color: white;
-    width: 20px;
-    height: 20px;
-    border-radius: 3px;
+body {
+    background: #ebebeb;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+img {
+    width: 100% !important;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
     display: flex;
-    justify-content: space-around;
+    /* border: 3px solid green; */
+    background-color: #EAC926;
+    flex-direction: column;
+}
+
+/* HOME */
+/* Header */
+.logoContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.logoBarContainer {
+    display: flex;
+}
+
+.logo {
+    width: 50%;
+    padding: 10px;
+}
+
+.contenedorBotonBuscador {
+    display: flex;
+    width: 50%;
+    justify-content: center;
     align-items: center;
 }
 
+.contenedorBuscador {
+    display: flex;
+    height: 25px;
+    width: 90%;
+}
+
+.contenedorCard {
+    padding: 15px;
+}
+
+.tituloCard {
+    font-weight: 400;
+    text-align: center;
+}
+
+.tituloCard i {
+    margin-right: 10px;
+}
+
+.menuContenedor {
+    display: none;
+}
+
+.menuHamburguesaContenedor {
+    display: flex;
+    justify-content: center;
+}
+
+.menuHamburguesa {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #03264C;
+}
 
 
-/*FOOTER*/
+input {
+    width: 95%;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
 
-footer{
-    background-color: white;
+button {
+    width: 15%;
+    padding: 1px;
+    border: none;
+    background-color: #fff;
+    border-radius: 0 5px 5px 0;
+}
+
+/* Fin Header */
+/* Main */
+
+main h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.ultimaVisita, .ofertas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ultimaVisita .productos {
+    width: 95%;
+}
+
+.productos article {
+    background: #fff;
+    padding: 10px 0;
+}
+
+main section article i {
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    background: #fff;
+    border-radius: 50%;
+    padding: 8px;
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    width: 35px;
+    height: 35px;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 10px;
+    border-top: 1px solid #ebebeb;
+}
+
+.precio {
+    font-size: 18px;
+    width: 30%;
+}
+
+.descuento{
+    width: 70%;
+    color: #39b54a;
+}
+
+.descuento,
+.descripcion {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.descripcion {
+    color: #666;
+}
+
+main section article {
+    margin-bottom: 15px;
+}
+
+.ofertas .productos {
+    width: 95%;
+}
+
+main section div.productos article i {
+    transition: transform 1s;
+}
+
+main section div.product0s article:hover i{
+    transform: rotate(-90deg);
+}
+
+/* Fin Main */
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+}
+footer h3, p {
+    margin: 0;
+    padding: 0;
+}
+footer section {
+    color: #666;
+    padding: 15px;
+}
+footer .infoFooter {
+    font-size: 12px;
+}
+
+footer .iconosFooter {
+    font-size: 2em;
+    color: #1259c3;
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+}
+
+footer .iconosFooter:hover {
+    color: #EAC926;
+    transition: all 0.4s ease-in;
+}
+
+footer .iconosFooter:hover i {
+    transform: rotateY(180deg);
+    transition: all 0.4s ease-in;
+}
+
+footer .iconosFooter:not(:hover) i {
+    transform: rotateY(0deg);
+    transition: all 0.4s ease-in;
+}
+
+footer .pieFooter {
+    text-align-last: left;
+    margin-top: 10px;
+}
+
+/* Fin Footer */
+
+
+
+/* Media Query */
+
+/* Tablet */
+@media (min-width: 768px) {
+
+
+    /* Header */
+    .logoContainer {
+        flex-direction: row;
+    }
+
+    .logoBarContainer {
+        width: 50%;
+    }
+
+    .contenedorCard {
+        display: flex;
+        width: 50%;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedorCard h2 {
+        font-size: 16px;
+    }
+
+    .menuHamburguesaContenedor {
+        display: none;
+    }
+
+    .menuContenedor {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    ul {
+        display: flex;
+        width: 45%;
+        justify-content: space-between;
+    }
+
+
+    /* Main */
+    .ultimaVisita, .ofertas {
+        height: 860px;
+    }
+
+    .productos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .productos article {
+        width: 49%;
+    }
+
+    main section div article {
+        height: 400px;
+        transition: all 0.4s ease-in;
+    }
+
+    .card h4 {
+        position: relative;
+        bottom: 40px;
+        z-index: -1;
+        opacity: 0;
+        transition: all 0.4s ease-in;
+    }
+
+    main section div article:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        height: 27em;
+    }
+
+    main section div article:hover .card h4 {
+        position: relative;
+        bottom: 0;
+        z-index: 1;
+        opacity: 1;
+    }
+
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .ultimaVisita,
+    .ofertas {
+        height: 295px;
+    }
+
+    .contenedorCard h2 {
+        font-size: 22px;
+    }
+
+    .productos article {
+        width: 23%;
+    }
+
+    .precio,
+    .descuento {
+        font-size: 14px;
+    }
+
+    main section div article {
+        height: 18em;
+    }
+
+    main section div article:hover {
+        height: 19em;
+    }
+
+    footer div {
+        display: flex;
+    }
+}
+
+/* TV hasta 1366 */
+@media (min-width: 1200px) {
+    .ultimaVisita, .ofertas {
+        height: 380px;
+    }
+    main section div article {
+        height: 380px;
+    }
+
+    main section div article:hover {
+        height: 300px;
+    }
 }
