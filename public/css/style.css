@@ -190,7 +190,7 @@ main section div.productos article i {
     transition: transform 1s;
 }
 
-main section div.product0s article:hover i{
+main section div.productos article:hover i{
     transform: rotate(-90deg);
 }
 
