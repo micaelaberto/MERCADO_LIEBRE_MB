@@ -190,10 +190,6 @@ main label {
     z-index: -1;
     padding: 16px 20px;
     display: block;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
     transform: scale(0, 0);
     transition: all 0.3s ease;
     }
