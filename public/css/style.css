@@ -133,7 +133,6 @@ main h3 {
 
 .productos article {
     background: #fff;
-    padding: 10px 0;
 }
 
 main section article i {
@@ -202,6 +201,7 @@ footer {
     flex-direction: column;
     text-align: center;
     margin-top: 20px;
+    background-color: white;
 }
 footer h3, p {
     margin: 0;
@@ -300,7 +300,7 @@ footer .pieFooter {
     }
 
     .productos article {
-        width: 49%;
+        width: 360px;
     }
 
     main section div article {
@@ -373,6 +373,6 @@ footer .pieFooter {
     }
 
     main section div article:hover {
-        height: 300px;
+        height: 370px;
     }
 }
